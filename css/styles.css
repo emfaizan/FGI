@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+
+
+@font-face {
+	font-family: 'Fakt';
+	src: url('../fonts/FaktPro-Thin.eot');
+	src: url('../fonts/FaktPro-Thin.eot?#iefix') format('embedded-opentype'),
+	     url('../fonts/FaktPro-Thin.woff') format('woff'),
+	     url('../fonts/FaktPro-Thin.ttf') format('truetype');
+	font-weight: 100;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Fakt';
+	src: url('../fonts/FaktPro-ThinItalic.eot');
+	src: url('../fonts/FaktPro-ThinItalic.eot?#iefix') format('embedded-opentype'),
+	     url('../fonts/FaktPro-ThinItalic.woff') format('woff'),
+	     url('../fonts/FaktPro-ThinItalic.ttf') format('truetype');
+	font-weight: 100;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Fakt';
+	src: url('../fonts/FaktPro-Light.eot');
+	src: url('../fonts/FaktPro-Light.eot?#iefix') format('embedded-opentype'),
+	     url('../fonts/FaktPro-Light.woff') format('woff'),
+	     url('../fonts/FaktPro-Light.ttf') format('truetype');
+	font-weight: 200;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'Fakt';
+	src: url('../fonts/FaktPro-Blond.eot');
+	src: url('../fonts/FaktPro-Blond.eot?#iefix') format('embedded-opentype'),
+	     url('../fonts/FaktPro-Blond.woff') format('woff'),
+	     url('../fonts/FaktPro-Blond.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Fakt';
+	src: url('../fonts/FaktPro-Normal.eot');
+	src: url('../fonts/FaktPro-Normal.eot?#iefix') format('embedded-opentype'),
+	     url('../fonts/FaktPro-Normal.woff') format('woff'),
+	     url('../fonts/FaktPro-Normal.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Fakt';
+	src: url('../fonts/FaktPro-Medium.eot');
+	src: url('../fonts/FaktPro-Medium.eot?#iefix') format('embedded-opentype'),
+	     url('../fonts/FaktPro-Medium.woff') format('woff'),
+	     url('../fonts/FaktPro-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Fakt';
+	src: url('../fonts/FaktPro-SemiBold.eot');
+	src: url('../fonts/FaktPro-SemiBold.eot?#iefix') format('embedded-opentype'),
+	     url('../fonts/FaktPro-SemiBold.woff') format('woff'),
+	     url('../fonts/FaktPro-SemiBold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
+
+
+
+
+body {
+  @apply bg-gray-1
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-poppins;
+}
+
+
+/* Dropdown */
+@screen lg {
+  .dropdown-menu:hover > div {display: block !important ;}  
+  .bg-white .mega-dropdown {@apply border-t;}
+}
+
+
+/* HAMBURGER MENU */
+.icon-hamburger{@apply relative m-auto cursor-pointer; width: 28px;height: 22px;transform:rotate(0);transition:.5s ease-in-out;}
+.icon-hamburger span{@apply block absolute bg-white rounded left-0 opacity-100 w-full;height:3px;transform:rotate(0);transition:.25s ease-in-out}
+.bg-white .icon-hamburger span{@apply bg-blue-900;}
+.icon-hamburger span:nth-child(1){@apply top-0;}
+.icon-hamburger span:nth-child(2), .icon-hamburger span:nth-child(3){top: 9px;}
+.icon-hamburger span:nth-child(4){top: 18px;}
+.icon-hamburger.open span:nth-child(1){top:18px;width:0%;left:50%}
+.icon-hamburger.open span:nth-child(2){transform:rotate(45deg)}
+.icon-hamburger.open span:nth-child(3){transform:rotate(-45deg)}
+.icon-hamburger.open span:nth-child(4){top:18px;width:0%;left:50%}
+
+
+/* MOBILE MENU */
+.main-nav.open {
+    @apply absolute top-full left-0 right-0 border-t;
+    display:block !important;
+    box-shadow: 0 99px 69px rgba(0, 0, 0, 0.06);
+}
+
+.arrow-link:before {content:url("data:image/svg+xml,%3Csvg%20width%3D%2213%22%20height%3D%2210%22%20viewBox%3D%220%200%2013%2010%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M10.6971%204.37168L6.66552%200.743294L7.33448%200L12.3345%204.5L12.7474%204.87165L12.3345%205.24329L7.33448%209.74329L6.66552%209L10.697%205.37168L0%205.37168L0%204.37168L10.6971%204.37168Z%22%20fill%3D%22black%22%2F%3E%3C%2Fsvg%3E");line-height: 0;margin-right: 10px;}
+
+
+
+@tailwind utilities;
