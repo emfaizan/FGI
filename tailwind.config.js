@@ -4,11 +4,6 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        purple: {
-          900: '#291562',
-          800: '#6A27FF',
-          700: '#745BC3'
-        },
         blue: {
           1: '#E9FFF7',
           2: '#CBEDFF',
@@ -39,9 +34,6 @@ module.exports = {
         '2-75': '2.75rem',
         '3-25': '3.25rem',
         '5': '5rem'
-      },
-      boxShadow: {
-        xl: '0 3px 90px rgba(0, 0, 0, 0.04)'
       },
       container: {
         screens: {
