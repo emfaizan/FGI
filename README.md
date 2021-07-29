@@ -1,4 +1,4 @@
-# FGI
+# Tailwind Landing
 Built with tailwind css 
 
 
