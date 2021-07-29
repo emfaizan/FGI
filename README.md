@@ -1,6 +1,6 @@
-# FGI
+# Tailwind Landing
 Built with tailwind css 
 
 
 # Link
-> https://emfaizan.github.io/FGI/
+> https://emfaizan.github.io/tailwind-landing/
