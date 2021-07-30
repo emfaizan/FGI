@@ -9,18 +9,24 @@
 </head>
 
 <body>
-    <div class="container">
-        <header class="flex justify-between items-center lg:py-10">
-            <div class="logo">
-                <img src="images/logo.svg" alt="">
-            </div>
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <div class="logo">
+                    <img src="images/logo.svg" alt="" class="logo-lg hidden lg:block w-11/12">
+                    <img src="images/logo-mini.svg" alt="" class="logo-sm block lg:hidden">
+                </div>
 
-            <div class="menu">
-                <a class="flex items-center justify-center trigger shadow-xl h-12 w-12 bg-white">
-                    <img src="images/menu.svg" alt="">
-                </a>
+                <div class="menu">
+                    <a href="Javascript:void(0)" class="flex items-center justify-center trigger lg:shadow-xl h-8 w-8 lg:h-12 lg:w-12 bg-white">
+                        <img src="images/menu.svg" alt="">
+                    </a>
+                </div>
             </div>
-        </header>
+        </div>
+    </header>
+
+    <div class="container">
 
         <div class="banner-section mb-12 lg:mb-16">
             <div class="flex flex-wrap lg:flex-nowrap ">
