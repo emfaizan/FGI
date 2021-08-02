@@ -1,5 +1,4 @@
 $(".trigger").click(function() {
-	$(this).toggleClass('open');
 	$('.main-nav').toggleClass("open");
     $('body').toggleClass("menu-active");
 });
