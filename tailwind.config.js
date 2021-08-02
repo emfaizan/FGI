@@ -10,7 +10,9 @@ module.exports = {
           3: '#C9DBFF',
           4: '#E0E3FF',
           5: '#B6CDFF',
-          6: '#E2F5FF'
+          6: '#E2F5FF',
+          7: '#7B61FF',
+          8: '#A6B4D4'
         },
         green: {
           1: '#E1FDAC',
@@ -24,6 +26,9 @@ module.exports = {
         },
         gray: {
           1: '#E7E9EB',
+        },
+        red: {
+          1: '#FF3131'
         }
       },
       fontFamily: {

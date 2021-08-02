@@ -1,6 +1,7 @@
-$(".icon-hamburger").click(function() {
+$(".trigger").click(function() {
 	$(this).toggleClass('open');
-	$('.main-nav').toggleClass("open")
+	$('.main-nav').toggleClass("open");
+    $('body').toggleClass("menu-active");
 });
 
 // $('.dropdown-menu').click(function(){
@@ -36,10 +37,8 @@ $(window).scroll(function(){
 });
 
 
-$('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:true,
-    items:1,
-    autoplay: true
-})
+$('.slider-wrapper').slick({
+    slidesToShow: 1,
+    prevArrow: $('.prev-slide'),
+    nextArrow: $('.next-slide'),
+});
