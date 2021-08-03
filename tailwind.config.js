@@ -47,15 +47,12 @@ module.exports = {
       container: {
         screens: {
           sm: "100%",
-          md: "100%",
-          lg: "1440px"
+          lg: "1400px"
         },
-        center: true,
-        padding: {
-          DEFAULT: '1.25rem',
-          sm: '1.5rem',
-          lg: '2rem'
-        },
+        center: true
+      },
+      boxShadow: {
+        1: "0px 0px 20px rgba(0, 0, 0, 0.15)"
       }
     },
   },
