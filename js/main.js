@@ -31,7 +31,7 @@ $(window).scroll(function(){
     var sticky = $('.header'),
         scroll = $(window).scrollTop();
   
-    if (scroll >= 100) sticky.addClass('sticky');
+    if (scroll >= 80) sticky.addClass('sticky');
     else sticky.removeClass('sticky');
 });
 
