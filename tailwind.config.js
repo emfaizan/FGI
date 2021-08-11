@@ -44,6 +44,12 @@ module.exports = {
         '5': ['5rem', '5.5rem'],
         '5-5': ['5.5rem', '6rem']
       },
+      lineHeight: {
+        '1-1': '1.1'
+      },
+      height: {
+        '360': '22.5rem'
+      },
       container: {
         screens: {
           sm: "100%",
