@@ -48,7 +48,9 @@ module.exports = {
         '1-1': '1.1'
       },
       height: {
-        '360': '22.5rem'
+        '249': '249px0',
+        '360': '22.5rem',
+        '400': '25rem'
       },
       container: {
         screens: {
