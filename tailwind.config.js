@@ -14,6 +14,9 @@ module.exports = {
           7: '#7B61FF',
           8: '#A6B4D4'
         },
+        yellow: {
+          1: "#FFFBDC",
+        },
         green: {
           1: '#E1FDAC',
           2: '#E5FF9C'
@@ -33,7 +36,8 @@ module.exports = {
       },
       padding: {
         '5-5': '1.375rem',
-        '6-5': '1.625rem'
+        '6-5': '1.625rem',
+        '22': '5.5rem'
       },
       fontFamily: {
         'fakt': ['Fakt']
@@ -56,7 +60,12 @@ module.exports = {
         '249': '249px',
         '268': '268px',
         '360': '22.5rem',
-        '400': '25rem'
+        '400': '25rem',
+        '420': '420px',
+        '441': '441px'
+      },
+      width: {
+        '104': '104px'
       },
       container: {
         screens: {
