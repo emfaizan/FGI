@@ -16,10 +16,12 @@ module.exports = {
         },
         yellow: {
           1: "#FFFBDC",
+          2: "#FFF2E3"
         },
         green: {
           1: '#E1FDAC',
-          2: '#E5FF9C'
+          2: '#E5FF9C',
+          3: '#DCFAA7'
         },
         pink: {
           1: '#F8D5DD'
@@ -62,7 +64,10 @@ module.exports = {
         '360': '22.5rem',
         '400': '25rem',
         '420': '420px',
-        '441': '441px'
+        '441': '441px',
+        '449': '449px',
+        '499': '499px',
+        '673': '673px'
       },
       width: {
         '104': '104px'
