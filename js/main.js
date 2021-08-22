@@ -41,3 +41,8 @@ $('.slider-wrapper').slick({
     prevArrow: $('.prev-slide'),
     nextArrow: $('.next-slide'),
 });
+
+$(document).on('click', '#filterTrigger', function(){
+    $('#filters').toggle();
+    $(this).toggleClass('opened');
+})
