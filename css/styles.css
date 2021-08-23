@@ -113,7 +113,7 @@ body {
 	.arrow-link:before {@apply mr-5 w-6 h-6; background-size:23px; background-image:url("data:image/svg+xml,%3Csvg%20width%3D%2225%22%20height%3D%2222%22%20viewBox%3D%220%200%2025%2022%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M22.1135%2010.3609L13.3613%201.60878L14.0684%200.901672L23.8132%2010.6464L24.1668%2011L23.8132%2011.3536L14.0684%2021.0983L13.3613%2020.3912L22.3916%2011.3609L0%2011.3609L0%2010.3609L22.1135%2010.3609Z%22%20fill%3D%22black%22%2F%3E%3C%2Fsvg%3E");}
 }
 
-#filterTrigger:after {content:''; @apply h-3 lg:h-4 w-5 lg:w-6 absolute right-3 lg:right-4 bg-no-repeat bg-center bg-contain; background-image:url(../images/arrow-down.svg); }
-#filterTrigger.opened:after {transform:rotate(180deg)}
+#filterTrigger:after {content:''; @apply h-3 lg:h-4 w-5 lg:w-6 absolute right-4 lg:right-5 bg-no-repeat bg-center bg-contain; background-image:url(../images/arrow-down.svg); }
+#filterTrigger.opened:after {transform:rotate(180deg); -webkit-transform:rotate(180deg)}
 
 @tailwind utilities;
