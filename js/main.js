@@ -46,3 +46,9 @@ $(document).on('click', '#filterTrigger', function(){
     $('#filters').toggle();
     $(this).toggleClass('opened');
 })
+
+
+
+$(document).on('click', '.accordian-header', function(){
+    $(this).toggleClass('opened');
+})
