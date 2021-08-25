@@ -119,10 +119,10 @@ body {
 
 /* Accordian */
 .accordian-wrapper {@apply bg-white;}
-.accordian-header {@apply px-3.5 py-4 md:px-7 md:py-4.5 lg:px-10 lg:py-8 h-100 text-1-75 font-medium flex items-center justify-between relative cursor-pointer;}
-.accordian-header:after {content:''; @apply h-3 lg:h-4 w-5 lg:w-6 absolute right-4 lg:right-8 bg-no-repeat bg-center bg-contain; background-image:url(../images/accordian-arrow.svg); }
+.accordian-header {@apply px-3.5 py-4 md:px-7 md:py-4.5 lg:px-10 lg:py-8 h-12 md:h-12.5 lg:h-100 text-sm lg:text-1-75 font-medium flex items-center justify-between relative cursor-pointer;}
+.accordian-header:after {content:''; @apply h-2 lg:h-4 w-3.5 lg:w-6 absolute right-4 lg:right-8 bg-no-repeat bg-center bg-contain; background-image:url(../images/accordian-arrow.svg); }
 .accordian-header.opened:after {transform:rotate(180deg); -webkit-transform:rotate(180deg)}
-.accordian-body {@apply hidden px-3.5 py-4 md:px-7 md:py-4.5 lg:px-10 text-1-75 lg:pt-4 lg:pb-10;}
+.accordian-body {@apply hidden px-3.5 py-4 md:px-7 md:py-4.5 lg:px-10 text-sm lg:text-1-75 lg:pt-4 lg:pb-10;}
 .opened + .accordian-body {@apply block;}
 
 @tailwind utilities;
