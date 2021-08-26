@@ -13,7 +13,8 @@ module.exports = {
           6: '#E2F5FF',
           7: '#7B61FF',
           8: '#A6B4D4',
-          9: '#D5F0FE'
+          9: '#D5F0FE',
+          10: '#001AFF'
         },
         yellow: {
           1: "#FFFBDC",
@@ -22,7 +23,8 @@ module.exports = {
         green: {
           1: '#E1FDAC',
           2: '#E5FF9C',
-          3: '#DCFAA7'
+          3: '#DCFAA7',
+          4: '#E1FD98'
         },
         pink: {
           1: '#F8D5DD'
@@ -90,7 +92,8 @@ module.exports = {
         '480': '480px',
         '499': '499px',
         '600': '600px',
-        '673': '673px'
+        '673': '673px',
+        '704': '704px'
       },
       margin: {
         23: '5.875rem',
