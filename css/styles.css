@@ -129,4 +129,10 @@ body {
 .overlay {position:relative;}
 .overlay:after {content:''; position: absolute; background:rgba(0,0,0,0.6); top:0; right:0; bottom:0; left:0; z-index: 99;}
 
+
+/* Custom Scroll */
+.custom-scroll::-webkit-scrollbar-track{background-color: #E9FFF7;}
+.custom-scroll::-webkit-scrollbar{width: 8px;background-color: #E9FFF7;}
+.custom-scroll::-webkit-scrollbar-thumb{background-color: #000;}
+
 @tailwind utilities;
