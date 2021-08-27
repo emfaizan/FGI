@@ -9,36 +9,83 @@
 </head>
 
 <body>
+    <!-- Header Start -->
     <header class="header">
         <div class="container">
-            <div class="header-inner">
-                <div class="logo">
-                    <img src="images/logo.svg" alt="" class="logo-lg hidden lg:block w-11/12">
-                    <img src="images/logo-mini.svg" alt="" class="logo-sm block lg:hidden">
+            <div class="relative w-full">
+                <div class="header-inner">
+                    <div class="logo lg:mr-10 xl:mr-0">
+                        <img src="images/logo.svg" alt="" class="logo-lg hidden lg:block -mb-6">
+                        <img src="images/logo-mini.svg" alt="" class="logo-sm block lg:hidden mx-4">
+                    </div>
+
+                    <div class="menu">
+                        <a href="Javascript:void(0)" class="flex items-center justify-center trigger mr-2 lg:mr-0 lg:shadow-1 h-12 w-12 lg:w-16 lg:h-16 xl:h-20 xl:w-20 bg-white">
+                            <div id="nav-icon3">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
+                    </div>
                 </div>
 
-                <div class="menu">
-                    <a href="Javascript:void(0)" class="flex items-center justify-center trigger lg:shadow-xl h-8 w-8 lg:h-12 lg:w-12 bg-white">
-                        <img src="images/menu.svg" alt="">
-                    </a>
-                </div>
+                <nav class="main-menu hidden absolute w-full lg:w-1/2 top-16 xl:top-20 right-0">
+                    <ul class="flex flex-col">
+                        <li class="bg-blue-7">
+                            <div class="search-box relative">
+                                <input type="text" placeholder="Suchen" class="w-full bg-transparent text-white placeholder-blue-8 outline-none text-sm md:text-xl lg:text-1-75 py-4 lg:py-6 px-16 bg-no-repeat" style="background-position:left 22px center;background-image:url(./images/icon-search.svg)">
+                                <button class="absolute w-20 text-center top-0 bottom-0 right-0 outline-none text-white hover:bg-blue-700">
+                                    <img src="./images/icon-go.svg" alt="Search" class="inline-block">
+                                </button>
+                            </div>
+                        </li>
+                        <li class="bg-blue-3 text-white text-sm md:text-xl lg:text-1-75 leading-relaxed">
+                            <div class="py-4 px-16 bg-no-repeat" style="background-position:left 22px top 26px;background-image:url(./images/icon-flag.svg)">
+                                <div class="text-blue-8">
+                                    <span class="inline-block">15:12 Uhr</span>
+                                    <span class="inline-block ml-3"><img src="./images/icon-weather.svg" alt="" class="inline-block"> Berlin</span>
+                                </div>
+                                <span>Mittwoch, 02. Juni 2021</span>
+                            </div>
+                        </li>
+                        <li class="bg-black text-white px-12 lg:px-16 py-9">
+                            <ul>
+                                <li class="py-2"><a href="#" class="text-sm md:text-xl lg:text-1-75 hover:text-blue-100">Berater</a></li>
+                                <li class="py-2"><a href="#" class="text-sm md:text-xl lg:text-1-75 hover:text-blue-100">Über Uns</a></li>
+                                <li class="py-2"><a href="#" class="text-sm md:text-xl lg:text-1-75 hover:text-blue-100">Unsere Services</a></li>
+                                <li class="py-2"><a href="#" class="text-sm md:text-xl lg:text-1-75 hover:text-blue-100">Cases</a></li>
+                                <li class="py-2"><a href="#" class="text-sm md:text-xl lg:text-1-75 hover:text-blue-100">Themen</a></li>
+                                <li class="py-2"><a href="#" class="text-sm md:text-xl lg:text-1-75 hover:text-blue-100">Kontak</a></li>
+                            </ul>
+                        </li>
+                        <li class="bg-red-1 text-white">
+                            <a href="#" class="flex justify-between items-center py-6 border-t border-b border-red-1 pl-16 pr-6 lg:px-16 text-sm md:text-xl lg:text-1-75 bg-no-repeat" style="background-position:left 22px center;background-image:url(./images/icon-monitor.svg)">
+                                Coaching Plattform
+                                <span class="text-sm">EINLOGGEN <img src="./images/icon-external-link.svg" alt="" class="inline ml-2"> </span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </header>
+    <!-- Header End -->
 
     <div class="container">
 
-        <div class="banner-section mb-12 lg:mb-16">
+        <div class="banner-section mb-12 lg:mb-16 lg:pt-4">
             <div class="flex flex-wrap lg:flex-nowrap ">
-                <div class="w-full lg:w-3/4 p-6 lg:p-8 text-white flex flex-col justify-between bg-no-repeat bg-center bg-cover" style="min-height:75vh; background-image:url(images/img1.png)">
+                <div class="w-full lg:w-3/4 p-6 lg:px-9 lg:py-6 h-60 md:h-530 lg:h-607 text-white flex flex-col justify-between bg-no-repeat bg-center bg-cover" style="background-image:url(images/img1.png)">
                     <span class="text-2xl lg:text-1-75 mb-4">Unsere Services</span>
-                    <h1 class="text-6xl md:text-7xl lg:text-5 flex-grow">Heading towards an agile transformation.</h1>
+                    <h1 class="text-6xl md:text-7xl lg:text-7xl xl:text-5 flex-grow">Heading towards <br class="hidden md:block"> an agile transformation.</h1>
 
                     <a href="#" class="arrow-link">Mehr erfahren</a>
                 </div>
 
                 <div class="w-full lg:w-1/4 flex flex-col">
-                    <div class="time-overview bg-gray-900 text-white p-4">
+                    <div class="time-overview bg-gray-2 text-white p-4 lg:px-6 lg:py-5.5 h-16 md:h-19 lg:h-100">
                         <div class="flex items-center">
                             <div class="date text-xl md:text-2xl lg:text-3xl">12:00</div>
                             <div class="weather ml-3">50%</div>
@@ -46,7 +93,7 @@
                         <div class="day text-base md:text-lg lg:text-xl">Wednesday, 17th March</div>
                     </div>
 
-                    <div class="text-white relative flex flex-col justify-between p-4 flex-grow bg-no-repeat bg-center bg-cover" style="min-height:75vh; background-image:url(images/img2.png)">
+                    <div class="text-white relative flex flex-col justify-between p-4 lg:px-6 lg:py-5.5 flex-grow bg-no-repeat bg-center bg-cover" style="background-image:url(images/img2.png)">
                         <span class="text-2xl lg:text-1-75 mb-4">Cases</span>
                         <h3 class="text-2-75 md:text-5xl lg:text-3-25 mb-4 flex-grow">Eos et Accusam et Justo duo</h3>
 
