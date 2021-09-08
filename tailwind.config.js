@@ -31,6 +31,7 @@ module.exports = {
         },
         purple: {
           1: '#C9C8FF',
+          2: '#F5E5FF'
         },
         gray: {
           1: '#E7E9EB',
@@ -128,6 +129,7 @@ module.exports = {
         '35': '8.75rem',
         '38': '9.5rem',
         '7.5': '1.875rem',
+        '14.5': '3.75rem',
         '17': '4.25rem',
         '18': '4.5rem',
         '4.5': '1.125rem',
