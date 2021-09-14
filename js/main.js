@@ -45,10 +45,22 @@ $('.slider-wrapper').slick({
 $(document).on('click', '#filterTrigger', function(){
     $('#filters').toggle();
     $(this).toggleClass('opened');
-})
-
-
+});
 
 $(document).on('click', '.accordian-header', function(){
     $(this).toggleClass('opened');
+});
+
+$(document).on('click', '.open-modal', function(){
+    var modal = $(this).attr('modal-id');
+    $('body').addClass('modal-visible');
+
+    $(modal).show();
+});
+
+$(document).on('click', '.close-modal', function(){
+    var modal = $(this).attr('modal-id');
+    $('body').removeClass('modal-visible');
+
+    $(modal).hide();
 })

@@ -137,4 +137,11 @@ body {
 .custom-scroll::-webkit-scrollbar{width: 8px; height:8px; background-color: #E9FFF7;}
 .custom-scroll::-webkit-scrollbar-thumb{background-color: #000;}
 
+
+
+/* Modal*/
+.modal {@apply absolute md:top-12 lg:top-28 top-0 md:left-6 md:right-6 lg:left-12 lg:right-12 hidden; z-index: 99999;}
+.close-modal {@apply cursor-pointer;}
+.modal-visible:after {content: '';background: rgba(0,0,0,0.35);top: 0;right: 0;bottom: 0;left: 0;position: fixed;z-index: 9999; backdrop-filter: blur(5px);}
+
 @tailwind utilities;
