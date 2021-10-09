@@ -31,13 +31,14 @@ $(window).scroll(function(){
     var sticky = $('.header'),
         scroll = $(window).scrollTop();
   
-    if (scroll >= 80) sticky.addClass('sticky');
-    else sticky.removeClass('sticky');
+    if (scroll >= 150) sticky.addClass('stick');
+    else sticky.removeClass('stick');
 });
 
 
 $('.slider-wrapper').slick({
     slidesToShow: 1,
+    fade: true,
     prevArrow: $('.prev-slide'),
     nextArrow: $('.next-slide'),
 });

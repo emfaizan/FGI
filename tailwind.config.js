@@ -161,6 +161,13 @@ module.exports = {
         '671': '671px',
         '710': '710px'
       },
+      maxWidth: {
+        '8': '2rem',
+        '10': '2.5rem',
+        '12': '3rem',
+        '16': '4rem',
+        '20': '5rem'
+      },
       container: {
         screens: {
           sm: "100%",
@@ -174,7 +181,10 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      // ...
+     inset: ['hover', 'focus'],
+    }
   },
   plugins: [],
 }

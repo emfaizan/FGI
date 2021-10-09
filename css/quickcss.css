@@ -1,0 +1,18 @@
+.header .main-menu {transition:all ease 0.5s;}
+.menu-active .header .main-menu {opacity:1;pointer-events:auto;}
+body:after {content: '';background: rgba(0,0,0,0);top: 0;right: 0;bottom: 0;left: 0; position: fixed;transition:all ease 0.4s; visibility:hidden;}
+.menu-active:after {background: rgba(0,0,0,0.35);z-index: 1; backdrop-filter: blur(5px); visibility:visible;}
+
+.main-menu ul li a {transition:all ease 0.4s; position: relative; left:0;}
+.main-menu ul li a:hover {left:0.5rem;}
+
+.menu-active .header .header-inner .logo-sm, .header.stick .header-inner .logo-sm {transition-delay: 0.3s; transition:all cubic-bezier(0, 0, 0.2, 1) 0.4s;}
+
+.menu-active .header .header-inner .logo-lg, .header.stick .header-inner .logo-lg {display: none !important;}
+.menu-active .header .header-inner .logo-sm, .header.stick .header-inner .logo-sm {display:block !important; opacity: 1;}
+.menu-active .header .trigger, .header.stick .trigger {box-shadow:none;}
+.menu-active .header .header-inner, .header.stick .header-inner {}
+.menu {transition: all ease 0.4s;float: right;}
+.header.stick .menu, .menu-active .menu {justify-content:space-between;background:white;max-width:50%;width: 50%;}
+
+
